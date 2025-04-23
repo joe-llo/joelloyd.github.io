@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .media {
+      background: #fafafa;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .media:hover {
+      transform: translateY(-5px);
+    }
+
+    .media img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .media p {
+      font-size: 16px;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Joe Lloyd <br/> Sound Portfolio</h1>
+
+    <div class="grid">
+      
+        <div class="media">
+        <a href="project1.html">
+          <img src="assets/photos/IMG_11.png" alt="Project 1 Thumbnail">
+        </a>
+        <p>Showreel </p>
+      </div>
+
+    <div class="media">
+        <a href="project2.html">
+          <img src="assets/photos/IMG_21.png" alt="Project 2 Thumbnail">
+        </a>
+        <p>Interactive Installation</p>
+      </div>
+
+      <div class="media">
+        <a href="project3.html">
+          <img src="assets/photos/IMG_32.png" alt="Project 2 Thumbnail">
+        </a>
+        <p>Digital effects pedal & MIDI controller</p>
+      </div>
+
+      <!-- Add more projects here in the same format -->
+    </div>
+  </div>
+</body>
+</html>
